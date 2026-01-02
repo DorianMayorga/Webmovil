@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Aprendizaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mi Primera Página en la Nube</h1>
+            <p>Aprendiendo a desplegar con base de datos</p>
+        </header>
+        
+        <main>
+            <section id="form-section">
+                <h2>Guardar Datos en la Nube</h2>
+                <form id="data-form">
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                    <input type="email" id="email" placeholder="Tu email" required>
+                    <textarea id="message" placeholder="Tu mensaje"></textarea>
+                    <button type="submit">Guardar en Base de Datos</button>
+                </form>
+            </section>
+            
+            <section id="display-section">
+                <h2>Datos Guardados</h2>
+                <div id="data-list">Cargando datos...</div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Desplegado en Vercel con Supabase</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
